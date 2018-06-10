@@ -18,6 +18,7 @@
 :root {
   --background-primary: #192233;
   --background-secondary: #eaebec;
+  --background-tertiary: #dddee0;
   --text-primary: #fff;
   --text-secondary: #121213;
   --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
@@ -46,7 +47,7 @@ h1 {
 /* About Me Section */
 .about-me img {
   margin-top: 120px;
-  margin-bottom: 20px;
+  margin-bottom: 55px;
   border-radius: 50%;
   width: 230px;
   height: auto;
@@ -80,6 +81,7 @@ a:visited {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  box-shadow: var(--shadow);
 }
 
 h2 {
@@ -140,7 +142,8 @@ h2 {
 
 #description2 {
   flex: 1;
-  padding: 0.6em;
+  padding-left: 0.6em;
+  padding-right: 0.6em;
 }
 
 #small-projects {
@@ -171,3 +174,46 @@ h2 {
   grid-area: project5;
 }
 
+@media (max-width: 1000px) {
+  #project1 {
+    flex-direction: column;
+  }
+
+  #image1 {
+    height: 400px;
+  }
+}
+
+@media (max-width: 920px) {
+  .projects {
+    grid-template-areas: 
+      'project1 project1'
+      'project2 project2'
+      'small-projects small-projects';
+  }
+
+  #project2 {
+    background: var(--background-tertiary);
+    flex-direction: column-reverse;
+    padding-bottom: 50px;
+  }
+
+  #small-projects {
+    grid-template-areas:
+      'project3 project3'
+      'project4 project4'
+      'project5 project5';
+  }
+}
+
+@media (max-width: 720px) {
+  .name, .projects-title {
+    text-align: center;
+  }
+
+  #social-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
