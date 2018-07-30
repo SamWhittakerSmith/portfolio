@@ -1,87 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Portfolio</title>
+  <title>My Portfolio</title>
 
-  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="scss/main.css">
+
+  <!-- Lato Font -->
   <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
-
-  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
-  <script src="app.js"></script>
-
 </head>
+
 <body>
-  
-  <!-- main header -->
-  <header class="name">
-      <h1>Sam Whittaker-Smith</h1>
+  <!-- HEADER -->
+  <header>
+    <div class="nav-btn">
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+    </div>
+
+    <nav class="nav-menu">
+      <div class="menu-items">
+        <ul>
+          <li class="nav-item">
+            <a href="#" class="nav-link nav-link-home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="/about.html" class="nav-link nav-link-about">Who Am I</a>
+          </li>
+          <li class="nav-item">
+            <a href="/projects.html" class="nav-link nav-link-projects">My Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="/contact.html" class="nav-link nav-link-contact">Get In Touch</a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-item-preview">
+        <div class="preview"></div>
+      </div>
+    </nav>
   </header>
 
-  <!-- ABOUT ME -->
-  <section class="about-me">
-    <img src="/Images/photoPlaceHolder.jpg" alt="A picture of myself">
+  <!-- MAIN -->
+  <main id="home">
+    <div class="portrait"></div>
 
-    <div id="info">
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam blanditiis error hic esse? Atque in, quae nisi tenetur voluptatem ex doloremque repellendus mollitia tempore modi nesciunt ut aperiam accusamus cupiditate fugit. Modi hic ab tempora fuga at cumque rem, omnis placeat, iusto delectus ipsam voluptas veniam. Dolorum omnis explicabo, officiis ut doloribus iure? Optio soluta in sed eius labore eum repudiandae, facilis maxime, deleniti cumque qui fuga tenetur, nulla et debitis provident dicta laborum repellendus quisquam voluptatem officia. Assumenda modi inventore eligendi velit est consequatur porro vel possimus minus? Molestias, ullam excepturi cupiditate placeat vel quos delectus dicta enim voluptas!
+    <h1 class="name">Sam
+      <span class="text-secondary">Whittaker-Smith</span>
+    </h1>
+    <h2 class="sub-heading">Minimalist, Web Developer & Programmer</h2>
 
-      <br>
-      <br>
-      
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, explicabo officia! Hic enim reiciendis commodi rerum reprehenderit molestiae, perferendis dolorum aliquam facilis provident labore debitis tempore modi quibusdam quod voluptatum? Iste minima temporibus quo! Qui laudantium quam, doloribus commodi perferendis aliquam temporibus est ipsum pariatur accusamus quae, expedita, vel at.</p>
-
-      <div id="social-links">
-        <a href="https://www.linkedin.com/in/sam-whittaker-smith-49443a164/" target="_blank">
-          <i class="fab fa-linkedin-in fa-2x"></i>
-        </a>
-        <a href="https://github.com/SamWhittakerSmith" target="_blank">
-          <i class="fab fa-github fa-2x"></i>
-        </a>
-        <!-- JavaScript event: upon clicking, email address appears -->
-        <a href="#">
-          <i class="far fa-envelope fa-2x"></i>
-        </a>
-      </div>
+    <div class="icons">
+      <a href="https://www.linkedin.com/in/sam-whittaker-smith-49443a164/" target="_blank">
+        <i class="fab fa-linkedin-in fa-2x"></i>
+      </a>
+      <a href="https://github.com/SamWhittakerSmith" target="_blank">
+        <i class="fab fa-github fa-2x"></i>
+      </a>
+      <a href="https://codepen.io/samwhittakersmith/">
+        <i class="fab fa-codepen fa-2x"></i>
+      </a>
     </div>
-  </section>
+  </main>
 
-  <!-- PROJECTS -->
-  <header class="projects-title">
-    <h1>Projects</h1>
-  </header>
-
-  <section class="projects">
-    <div class="project" id="project1">
-      <div class="image" id="image1"></div>
-
-      <div id="description1">
-        <h2>Project 1</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi, mollitia! Doloribus vel ut provident enim modi cum, eos iusto harum a, accusantium, quod dicta temporibus autem voluptatibus itaque laudantium ex possimus eius suscipit quas blanditiis! Repellendus officia nam cumque fugit doloremque, incidunt sit ipsum labore, cum, corrupti veniam id velit exercitationem enim beatae. Minima accusantium aliquid beatae ducimus consectetur! Architecto ea hic reprehenderit consequuntur dolores eligendi voluptatibus pariatur ullam! Et, beatae molestias quaerat eaque voluptates quo cum quasi repellendus architecto sapiente, nobis iusto vero? Fuga facilis nesciunt sunt minima harum? Neque officia quam soluta ullam quisquam sint maiores saepe molestias.</p>
-      </div>
-    </div>
-
-    <div class="project" id="project2">
-      <div class="image" id="image2"></div>
-
-      <div id="description2">
-        <h2>Project 2</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam voluptas sequi, deserunt tempora odio sunt quasi, dolor laudantium perspiciatis veritatis laborum cum totam reiciendis corrupti labore! Magnam fugit ducimus debitis non, quam possimus officiis voluptatum reiciendis, sint, quaerat quidem reprehenderit nobis vitae tempora nihil modi dolorum ab maxime dolor rem!</p>
-      </div>
-    </div>
-
-    <div class="project" id="small-projects">
-        <div class="image small-project" id="project3">
-          <h2>Project 3</h2>
-        </div>
-        <div class="image small-project" id="project4">
-          <h2>Project 4</h2>
-        </div>
-        <div class="image small-project" id="project5">
-          <h2>Project 5</h2>
-        </div>
-    </div>
-  </section>
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
 </body>
+
 </html>
