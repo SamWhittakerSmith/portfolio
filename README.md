@@ -1,2 +1,2 @@
 # portfolio
-My personal portfolio page
+My personal portfolio page. HTML5, CSS3, Sass, JavaScript.
