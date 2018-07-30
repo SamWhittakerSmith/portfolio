@@ -1,0 +1,87 @@
+@import "config";
+@import "nav";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  background: $primary-color;
+  color: #fff;
+  font-family: Lato, "Segoe UI", Tahoma, Geneva, sans-serif;
+}
+
+// HEADER
+header {
+  ul {
+    list-style: none;
+
+    li {
+      padding-bottom: 1rem;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}
+
+// MAIN
+main {
+  text-align: center;
+  height: 100%;
+
+  .portrait {
+    width: 14rem;
+    height: 14rem;
+    border: 3px $secondary-color solid;
+    border-radius: 50%;
+    background-image: url("/img/photoPlaceHolder.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 14rem;
+  }
+
+  .name {
+    margin-bottom: 0rem;
+    font-weight: 400;
+    font-size: 4rem;
+
+    .text-secondary {
+      color: $secondary-color;
+    }
+  }
+
+  .sub-heading {
+    margin-bottom: 1.8rem;
+    font-weight: 300;
+  }
+
+  .icons {
+    a {
+      text-decoration: none;
+      color: #fff;
+      padding: 0.4rem;
+
+      &:hover {
+        color: $secondary-color;
+        @include easeOut();
+      }
+    }
+  }
+
+  &#home {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

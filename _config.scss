@@ -1,0 +1,19 @@
+// Fonts
+@font-face {
+  font-family: BebasNeueRegular;
+  src: url(Fonts/BebasNeueRegular.ttf);
+}
+
+@font-face {
+  font-family: BebasNeueLight;
+  src: url(Fonts/BebasNeueLight.ttf);
+}
+
+// Variables
+$primary-color: #192233;
+$secondary-color: #ffae19;
+
+// Mixins
+@mixin easeOut {
+  transition: all 0.5s ease-out;
+}

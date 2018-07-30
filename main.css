@@ -1,0 +1,233 @@
+@font-face {
+  font-family: BebasNeueRegular;
+  src: url(Fonts/BebasNeueRegular.ttf);
+}
+
+@font-face {
+  font-family: BebasNeueLight;
+  src: url(Fonts/BebasNeueLight.ttf);
+}
+
+.nav-btn {
+  position: absolute;
+  z-index: 2;
+  margin: 2rem;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.nav-btn .btn-line {
+  width: 28px;
+  height: 3px;
+  margin: 0 0 5px 0;
+  background: #fff;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.nav-btn.close {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.nav-btn.close .btn-line:nth-child(1) {
+  -webkit-transform: rotate(45deg) translate(5px, 5px);
+          transform: rotate(45deg) translate(5px, 5px);
+}
+
+.nav-btn.close .btn-line:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-btn.close .btn-line:nth-child(3) {
+  -webkit-transform: rotate(-45deg) translate(7px, -6px);
+          transform: rotate(-45deg) translate(7px, -6px);
+}
+
+.nav-menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.9;
+  visibility: hidden;
+  z-index: 1;
+}
+
+.nav-menu.show {
+  visibility: visible;
+}
+
+.nav-menu .nav-item-preview,
+.nav-menu .menu-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  float: left;
+  width: 50%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.nav-menu .menu-items {
+  margin: 0;
+  padding: 0;
+  background: #111722;
+  -webkit-transform: translate3d(0, -100%, 0);
+          transform: translate3d(0, -100%, 0);
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.nav-menu .menu-items.show {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.nav-menu .menu-items a {
+  font-size: 1.5rem;
+}
+
+.nav-menu .menu-items a:hover {
+  color: #ffae19;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.nav-menu .nav-item-preview {
+  margin: 0;
+  padding: 0;
+  background: #192233;
+  -webkit-transform: translate3d(0, 100%, 0);
+          transform: translate3d(0, 100%, 0);
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.nav-menu .nav-item-preview.show {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.nav-menu .nav-item-preview .preview {
+  border: 1px #fff solid;
+  width: 400px;
+  height: 250px;
+  -webkit-transform: translate3d(100%, 0, 0);
+          transform: translate3d(100%, 0, 0);
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.nav-menu .nav-item-preview .preview.show {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.nav-menu .nav-item-preview .preview.home-image {
+  background: url("/img/homePageImage.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  background: #192233;
+  color: #fff;
+  font-family: Lato, "Segoe UI", Tahoma, Geneva, sans-serif;
+}
+
+header ul {
+  list-style: none;
+}
+
+header ul li {
+  padding-bottom: 1rem;
+}
+
+header ul a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  text-align: center;
+  height: 100%;
+}
+
+main .portrait {
+  width: 14rem;
+  height: 14rem;
+  border: 3px #ffae19 solid;
+  border-radius: 50%;
+  background-image: url("/img/photoPlaceHolder.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 14rem;
+}
+
+main .name {
+  margin-bottom: 0rem;
+  font-weight: 400;
+  font-size: 4rem;
+}
+
+main .name .text-secondary {
+  color: #ffae19;
+}
+
+main .sub-heading {
+  margin-bottom: 1.8rem;
+  font-weight: 300;
+}
+
+main .icons a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0.4rem;
+}
+
+main .icons a:hover {
+  color: #ffae19;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+main#home {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=main.css.map */
