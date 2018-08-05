@@ -1,5 +1,6 @@
 @import "config";
 @import "nav";
+@import "mobile";
 
 * {
   box-sizing: border-box;
@@ -7,6 +8,7 @@
 
 html {
   height: 100%;
+  margin: 0;
 }
 
 body {
@@ -15,22 +17,6 @@ body {
   background: $primary-color;
   color: #fff;
   font-family: Lato, "Segoe UI", Tahoma, Geneva, sans-serif;
-}
-
-// HEADER
-header {
-  ul {
-    list-style: none;
-
-    li {
-      padding-bottom: 1rem;
-    }
-
-    a {
-      color: #fff;
-      text-decoration: none;
-    }
-  }
 }
 
 // MAIN
@@ -83,5 +69,16 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+}
+
+main {
+  &#about {
+    overflow: hidden;
+    display: grid;
+    grid-template-areas: 
+      'title title'
+      'sub-heading sub-heading'
+      'portrait info';
   }
 }
