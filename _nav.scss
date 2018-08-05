@@ -45,7 +45,7 @@
   z-index: 1;
 
   &.show {
-    visibility: visible;
+    visibility: visible;;
   }
 
   .nav-item-preview, 
@@ -63,6 +63,7 @@
   .menu-items {
     margin: 0;
     padding: 0;
+    list-style: none;
     background: darken($primary-color, 5);
     transform: translate3d(0, -100%, 0);
     @include easeOut();
@@ -74,10 +75,25 @@
 
     a {
       font-size: 1.5rem;
+      font-weight: 300;
+      text-decoration: none;
+      color: #fff;
+
       &:hover {
         color: $secondary-color;
         @include easeOut();
       }
+    }
+  }
+
+  .nav-item {
+    padding-bottom: 2rem;
+    transform: translate3d(-600px, 0, 0);
+    @include easeOut();
+
+    &.show {
+      // Slide from left
+      transform: translate3d(0, 0, 0);
     }
   }
 
@@ -97,7 +113,7 @@
       border: 1px #fff solid;
       width: 400px;
       height: 250px;
-      transform: translate3d(100%, 0, 0);
+      transform: translate3d(600px, 0, 0);
       @include easeOut();
 
       &.show {
@@ -115,3 +131,9 @@
   }
 }
 
+// Delay each nav-item
+@for $i from 1 through 4 {
+  .nav-item:nth-child(#{$i}) {
+    transition-delay: $i * 0.1s;
+  }
+}
